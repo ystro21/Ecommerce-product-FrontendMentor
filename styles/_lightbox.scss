@@ -1,0 +1,46 @@
+.lightbox{
+    position: relative;
+
+    .product-hero{
+        width: 100%;
+    }
+
+    .previous{
+        left: 4%;
+        transition: left .3s;
+
+        &:hover{
+            left: 3%;
+        }
+    }
+
+    .next{
+        right: 4%;
+        transition: right .3s;
+
+        &:hover{
+            right: 3%;
+        }
+    }
+
+    .arrow{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+
+        background-color: $white;
+        border-radius: 50%;
+        width: 4rem;
+        height: 4rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        cursor: pointer;
+    }
+
+    .thumb-gallery{
+        display: none;
+    }
+}
